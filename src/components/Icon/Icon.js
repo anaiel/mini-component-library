@@ -52,7 +52,11 @@ const Wrapper = styled.div`
   */
   & > svg {
     display: block;
-    stroke-width: var(--stroke-width);
+
+    > * {
+      stroke: currentColor;
+      stroke-width: var(--stroke-width);
+    }
   }
 `;
 
